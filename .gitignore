@@ -42,6 +42,3 @@ yarn-error.*
 
 # generated homestay-import database (regenerate: tools/homestay_import/import.py)
 tools/homestay_import/*.db
-src/data/*.json
-tools/homestay_import/sources/*.json
-tools/homestay_import/*.db
