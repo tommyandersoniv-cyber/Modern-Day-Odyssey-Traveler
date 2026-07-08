@@ -1,0 +1,16 @@
+# Netlify deploy config for the Expo web build of Modern Day Odyssey.
+# Connect the GitHub repo in Netlify and these settings are picked up automatically.
+
+[build]
+  command = "npx expo export --platform web"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# The app is a single-page app (React Navigation, no server routes), so every
+# path must fall back to index.html.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

@@ -1,0 +1,46 @@
+{
+  "name": "odysseytraveler",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "dependencies": {
+    "@expo-google-fonts/press-start-2p": "^0.4.1",
+    "@expo/metro-runtime": "~56.0.15",
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "@react-navigation/bottom-tabs": "^7.18.2",
+    "@react-navigation/native": "^7.3.3",
+    "@react-navigation/stack": "^7.10.5",
+    "@shopify/react-native-skia": "2.6.2",
+    "expo": "~56.0.12",
+    "expo-camera": "~56.0.8",
+    "expo-file-system": "~56.0.8",
+    "expo-font": "~56.0.7",
+    "expo-image-manipulator": "~56.0.19",
+    "expo-image-picker": "~56.0.18",
+    "expo-media-library": "~56.0.7",
+    "expo-status-bar": "~56.0.4",
+    "expo-video": "~56.1.4",
+    "lottie-react-native": "~7.3.4",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "react-native": "0.85.3",
+    "react-native-gesture-handler": "~2.31.1",
+    "react-native-mmkv": "^4.3.2",
+    "react-native-reanimated": "4.3.1",
+    "react-native-safe-area-context": "~5.7.0",
+    "react-native-screens": "4.25.2",
+    "react-native-svg": "15.15.4",
+    "react-native-web": "^0.21.2",
+    "zustand": "^5.0.14"
+  },
+  "devDependencies": {
+    "@types/react": "~19.2.2",
+    "typescript": "~6.0.3"
+  },
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
+  },
+  "private": true
+}

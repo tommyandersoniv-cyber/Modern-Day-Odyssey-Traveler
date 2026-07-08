@@ -1,0 +1,77 @@
+{
+  "expo": {
+    "name": "Modern Day Odyssey",
+    "slug": "OdysseyTraveler",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0f0f1a",
+    "splash": {
+      "backgroundColor": "#0f0f1a",
+      "resizeMode": "contain",
+      "image": "./assets/splash-icon.png"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.odyssey.traveler",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Modern Day Odyssey uses the camera to capture photos of the people you meet and the quests you complete.",
+        "NSPhotoLibraryUsageDescription": "Modern Day Odyssey lets you add photos and videos from your library to character cards and quest archive entries.",
+        "NSPhotoLibraryAddUsageDescription": "Modern Day Odyssey may save pixelized character avatars and quest media to your library.",
+        "NSMicrophoneUsageDescription": "Modern Day Odyssey records audio when you capture quest videos."
+      }
+    },
+    "android": {
+      "package": "com.odyssey.traveler",
+      "adaptiveIcon": {
+        "backgroundColor": "#0f0f1a",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "READ_MEDIA_IMAGES",
+        "READ_MEDIA_VIDEO",
+        "RECORD_AUDIO"
+      ],
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "shortName": "Odyssey",
+      "themeColor": "#0f0f1a",
+      "backgroundColor": "#0f0f1a"
+    },
+    "plugins": [
+      "expo-font",
+      "expo-video",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Modern Day Odyssey uses the camera to capture photos of the people you meet.",
+          "microphonePermission": "Modern Day Odyssey records audio when you capture quest videos.",
+          "recordAudioAndroid": true
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Modern Day Odyssey lets you add photos from your library to character cards and quest entries.",
+          "cameraPermission": "Modern Day Odyssey uses the camera to capture photos for character cards and quest entries."
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Modern Day Odyssey accesses your photos so you can add them to quest archive entries.",
+          "savePhotosPermission": "Modern Day Odyssey can save pixelized avatars and quest media to your library.",
+          "isAccessMediaLocationEnabled": true
+        }
+      ]
+    ]
+  }
+}
