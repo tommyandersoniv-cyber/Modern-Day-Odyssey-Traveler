@@ -70,6 +70,8 @@ src/
 
 - **Quests**: `useQuestStore` holds the 99 regular + 54 legacy quests (normalised from JSON).
   `useChaosStore` holds the 97 chaos quests + the boss wheel. Completing a quest persists
+
+**Note on this public repo:** the full quest dataset (Thailand, Cambodia, Laos, Vietnam — 200+ curated location-based quests) is maintained in a private data repository and loaded at build time. This public repo ships `bangkok_sample.json`, a representative slice across all rarity tiers, so the schema and quest design are visible without publishing the complete content library.
   media to the document directory, writes an `ArchiveEntry`, awards XP, and recomputes badges.
 - **XP / Level**: `useGameStore.addXP` recomputes level (10 tiers, Wanderer → Legend),
   updates the daily streak, and raises a `pendingLevelUp` signal that `AppOverlays` turns
